@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Al-Hind Solutions | Innovative Technology</title>
+    <link rel="stylesheet" href="css/style.css?v=2">
+    <style>
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 48px;
+            align-items: center;
+        }
+        .about-img {
+            background: linear-gradient(135deg, #2563eb22, #10b98122);
+            border-radius: var(--radius);
+            height: 320px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 6rem;
+            border: 2px solid #e2e8f0;
+        }
+        .about-text h2 { font-size: 1.8rem; margin-bottom: 16px; color: var(--dark); }
+        .about-text p  { color: var(--muted); line-height: 1.8; margin-bottom: 14px; }
+        .stats-row {
+            display: flex;
+            gap: 32px;
+            margin-top: 24px;
+            flex-wrap: wrap;
+        }
+        .stats-item h3 { font-size: 2rem; color: var(--primary); font-weight: 800; }
+        .stats-item p  { color: var(--muted); font-size: 0.9rem; }
+        .section-alt   { background: var(--white); }
+        @media (max-width: 768px) {
+            .about-grid { grid-template-columns: 1fr; }
+            .about-img  { height: 200px; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ── Navbar ── -->
+    <nav class="navbar">
+        <div class="nav-brand">🚀 Al-Hind Solutions</div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#team">Team</a></li>
+            <li><a href="login.php">Login</a></li>
+            <li><a href="register.php" class="btn-primary" style="padding:8px 18px;">Register</a></li>
+        </ul>
+    </nav>
+
+    <!-- ── Hero ── -->
+    <section class="hero">
+        <h1>Empowering Businesses<br>Through Smart Technology</h1>
+        <p>Al-Hind Solutions crafts cutting-edge digital products that help modern companies grow faster, smarter, and stronger.</p>
+        <div class="hero-btns">
+            <a href="register.php" class="btn-primary">🚀 Get Started</a>
+            <a href="#about" class="btn-secondary">Learn More</a>
+        </div>
+    </section>
+
+    <!-- ── About ── -->
+    <div class="section-alt" id="about">
+        <div class="section">
+            <div class="about-grid">
+                <div class="about-img">🚀</div>
+                <div class="about-text">
+                    <h2>About Al-Hind Solutions</h2>
+                    <p>Established in 2015, Al-Hind Solutions is a dynamic IT company focused on delivering scalable software, cloud infrastructure, and AI-powered tools to businesses of all sizes.</p>
+                    <p>Our team of passionate engineers, designers, and business strategists collaborate daily to turn ideas into powerful digital products.</p>
+                    <div class="stats-row">
+                        <div class="stats-item">
+                            <h3>300+</h3>
+                            <p>Happy Clients</p>
+                        </div>
+                        <div class="stats-item">
+                            <h3>80+</h3>
+                            <p>Employees</p>
+                        </div>
+                        <div class="stats-item">
+                            <h3>10+</h3>
+                            <p>Years Experience</p>
+                        </div>
+                        <div class="stats-item">
+                            <h3>20+</h3>
+                            <p>Countries Served</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ── Services ── -->
+    <div id="services">
+        <div class="section">
+            <h2 class="section-title">Our Services</h2>
+            <p class="section-sub">We offer tailored technology services to meet your unique business goals.</p>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">💻</div>
+                    <h3>Web Development</h3>
+                    <p>Responsive, fast, and beautiful websites and web apps built with modern frameworks.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📱</div>
+                    <h3>Mobile Apps</h3>
+                    <p>Cross-platform iOS and Android apps with seamless user experiences.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">☁️</div>
+                    <h3>Cloud Solutions</h3>
+                    <p>AWS, Azure, and GCP cloud migration and management for maximum uptime.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔒</div>
+                    <h3>Cybersecurity</h3>
+                    <p>Comprehensive threat analysis and security hardening for your systems.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3>Data Analytics</h3>
+                    <p>Business intelligence dashboards and reports powered by real-time data.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🤖</div>
+                    <h3>AI & Automation</h3>
+                    <p>Smart workflows and machine learning solutions to boost efficiency.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ── Team ── -->
+    <div class="section-alt" id="team">
+        <div class="section">
+            <h2 class="section-title">Meet Our Team</h2>
+            <p class="section-sub">The brilliant minds behind Al-Hind Solutions.</p>
+            <div class="team-grid">
+                <div class="team-card">
+                    <div class="team-avatar">N</div>
+                    <h3>Nathan Cole</h3>
+                    <p>CEO & Founder</p>
+                </div>
+                <div class="team-card">
+                    <div class="team-avatar">P</div>
+                    <h3>Priya Sharma</h3>
+                    <p>CTO</p>
+                </div>
+                <div class="team-card">
+                    <div class="team-avatar">L</div>
+                    <h3>Lena Torres</h3>
+                    <p>Head of Design</p>
+                </div>
+                <div class="team-card">
+                    <div class="team-avatar">D</div>
+                    <h3>Daniel Park</h3>
+                    <p>Lead Developer</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ── CTA ── -->
+    <div class="cta-banner">
+        <h2>Ready to Join Al-Hind Solutions?</h2>
+        <p>Create your employee or admin account and access your personalized portal.</p>
+        <a href="register.php" class="btn-secondary">Create Account</a>
+        &nbsp;&nbsp;
+        <a href="login.php" class="btn-primary" style="background:white;color:#2563eb;">Login Now</a>
+    </div>
+
+    <!-- ── Footer ── -->
+    <footer class="footer">
+        <p>&copy; 2025 Al-Hind Solutions Pvt. Ltd. All rights reserved. &nbsp;|&nbsp; 📧 info@al-hindsolutions.com &nbsp;|&nbsp; 📞 +91-98765-43210</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
